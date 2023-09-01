@@ -1,0 +1,22 @@
+public class oi14 {
+    public static void main(String[] args){
+        Scanner leia = new Scanner(System.in);
+        System.out.println("Digite o 1 angulo ");
+        int ai = leia.nextInt();
+        if (ai > 180){
+            System.out.println("VALOR INCORRETO");
+        }
+        System.out.println("Digite o 2 angulo ");
+        int aii = leia.nextInt();
+        if (aii > 180){
+            System.out.println("VALOR INCORRETO");
+        }
+        int aiii = ai + aii;
+        if (aiii > 180){
+            System.out.println("VALOR INCORRETO");
+        }
+        else System.out.println("O 3 angulo vale " + (180 - (ai + aii)));
+    }
+}
+
+// Receba 2 ângulos de um triângulo. Calcule e mostre o valor do 3º ângulo.
