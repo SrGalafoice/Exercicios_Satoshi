@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class tchau9 {
+    public static void main (String[] args){
+        Scanner leia = new Scanner(System.in);
+        int i, h, dig = 1;
+        int mat[][] = new int [4][4];
+        for (i = 0; i < 4; i++){
+            for (h = 0; h < 4; h++){
+                if (i == h){
+                    mat[i][h] = dig;
+                    dig *= 4;
+                } else{
+                    System.out.println("Matriz "+(i+1)+", "+(h+1));
+                    mat[i][h] = leia.nextInt();
+                }
+            }
+        }
+        System.out.println("-------------------------");
+        System.out.println("|" + mat[0][0]+"|"+mat[0][1]+"|"+mat[0][2]+"|"+mat[0][3]+"|");
+        System.out.println("|" + mat[1][0]+"|"+mat[1][1]+"|"+mat[1][2]+"|"+mat[1][3]+"|");
+        System.out.println("|" + mat[2][0]+"|"+mat[2][1]+"|"+mat[2][2]+"|"+mat[2][3]+"|");
+        System.out.println("|" + mat[3][0]+"|"+mat[3][1]+"|"+mat[3][2]+"|"+mat[3][3]+"|");
+        System.out.println("-------------------------");
+    }
+}
+
+// Criar e carregar uma matriz [4][4] com valores aleatórios, sendo que a 
+diagonal principal terá seus dados carregados no programa segundo: (Imagem com [0][0] = 1; [1][1] = 4; [2][2] = 16; [3][3] = 64)
