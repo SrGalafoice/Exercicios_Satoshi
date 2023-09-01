@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class oi38 {
+    public static void main(String[] args) {
+        int i;
+        int maior = 0;
+        int menor = 0;
+        int y = 0;
+        for (i = 1; i <= 5; i++) {
+            Scanner leia = new Scanner(System.in);
+            System.out.println("Digite o numero ");
+            int x = leia.nextInt();
+            if (x < 0) {
+                System.out.println("VALOR INCORRETO SEU CEGO, SÓ PODE VALOR POSITIVO");
+            }else if (x < maior){
+                y = x; // 4
+            }else if (x > y) { // (4 > 10),
+                maior = x; // 10,
+                menor = y; // 0
+                y = x; // 10
+            } else {
+                if (x < menor || x > 0){
+                menor = x; // 4
+                }
+            }
+        }
+        System.out.println(maior + " " + menor);
+    }
+}
+
+// Receba 100 números inteiros reais. Verifique e mostre o maior e o menor 
+valor. Obs.: somente valores positivos.
