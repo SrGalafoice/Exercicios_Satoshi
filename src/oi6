@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class oi6 {
+    public static void main(String[] args){
+        Scanner leia = new Scanner(System.in);
+
+        System.out.println("Digite valor de X ");
+        double x = leia.nextDouble();
+        System.out.println("Digite valor de Y ");
+        double y = leia.nextDouble();
+
+        double z = x;
+        x = y;
+        y = z;
+
+        System.out.println("Valor de X e Y, respectivamente, são " + x + "e " + y);
+
+    }
+}
