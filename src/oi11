@@ -1,0 +1,37 @@
+public class tchau11 {
+    public static void main (String[] args){
+        int i, h, mat[][] = new int[8][8];
+        for (i = 0; i < 8; i++){
+            for (h = 0; h < 8; h++){
+                if (i >= 0 && i <= 7){
+                    if (h >= 0 && h <= 7){
+                        mat[i][h] = 1;
+                        System.out.println("Matriz "+i+","+h+ " " + mat[i][h]);
+                    }
+                }
+                if (i >= 1 && i <= 6){
+                    if (h >= 1 && h <= 6){
+                        mat[i][h] = 2;
+                        System.out.println("Matriz "+i+","+h+ " " + mat[i][h]);
+                    }
+                }
+                if (i >= 2 && i <= 5){
+                    if (h >= 2 && h <= 5){
+                        mat[i][h]= 3;
+                        System.out.println("Matriz "+i+","+h+ " " + mat[i][h]);
+                    }
+                }
+                if (i == 3 && h == 3){
+                    mat[i][h] = 8;
+                    System.out.println("Matriz "+i+","+h+ " " + mat[i][h]);
+                }
+                if (i == 4 && h == 4){
+                    mat[i][h] = 4;
+                    System.out.println("Matriz "+i+","+h+ " " + mat[i][h]);
+                }
+            }
+        }
+    }
+}
+
+// Criar uma matriz [8][8] inteiro e o programa irá carregar segundo: (outra imagem... E esse eu buguei pra saber se ta certokkkkkk (sim, to com preguiça de conferir esse aquizzzz)
