@@ -1,0 +1,24 @@
+public class tchau2 {
+    public static void main (String[] args){
+        Scanner leia = new Scanner(System.in);
+        int i, maior = 0, menor = 0, media = 0;
+        int vet[] = new int[10];
+        for (i = 0;i < 10; i++){
+            System.out.println("Vetor " + (i+1));
+            vet[i] = leia.nextInt();
+            if (vet[i] > maior){
+                maior = vet[i];
+            } else if (vet[i] < menor){
+                menor = vet[i];
+            }
+            media += vet[i];
+        }
+        media = media / 10;
+        System.out.println(maior + " e " + menor);
+        System.out.println(media);
+    }
+}
+
+// Criar e coletar um vetor [100] inteiro e exibir:
+// a. O maior e o menor valor;
+// b. A média dos valores.
