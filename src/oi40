@@ -1,0 +1,43 @@
+public class oi40 {
+    public static void main(String[] args) {
+        Scanner leia = new Scanner(System.in);
+        System.out.println("Valor 1 ");
+        double x = leia.nextInt();
+        System.out.println("Valor 2 ");
+        double y = leia.nextInt();
+        System.out.println("Achei esse numero primo = " + CalcPrimo(x, y));
+    }
+     public static double CalcPrimo(double x, double y){
+        double i;
+        double p = 0;
+        if (x > y){
+        for (i = y;i <= x; i++){
+            p = i;
+            if (p > 1) {
+                double raiz = Math.sqrt(p);
+
+                for (double i2 = 2; i2 <= raiz; i++){
+                    if (p % i2 != 0){
+                        return p;
+                    }
+                }
+            }
+        }
+    } else {
+            for (i = x;i <= y; i++){
+                p = i;
+                if (p > 1) {
+                    double raiz = Math.sqrt(p);
+
+                    for (int i2 = 2; i2 <= raiz; i++){
+                        if (p % i2 != 0) return p;
+                        return p;
+                    }
+                }
+            }
+
+        }
+    return p;}
+}
+//Receba 2 números inteiros. Verifique e mostre todos os números primos 
+existentes entre eles.
