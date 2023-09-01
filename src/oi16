@@ -1,0 +1,28 @@
+public class oi16 {
+    public static void main(String[] args){
+        Scanner leia = new Scanner(System.in);
+        System.out.println("Digite as horas trabalhadas ");
+        int hr = leia.nextInt();
+
+        System.out.println("Valor por hora ");
+        double vhr = leia.nextDouble();
+
+        System.out.println("Percentual de desconto ");
+        double pd = leia.nextDouble() / 100;
+
+        System.out.println("N de dependentes ");
+        int dep = leia.nextInt() * 100;
+
+        double sal = hr * vhr;
+        double desc = sal * pd;
+        sal -= desc;
+        sal += dep;
+        System.out.println("Salario à receber " + sal);
+    }
+}
+
+// Receba a quantidade de horas trabalhadas, o valor por hora, o percentual 
+de desconto e o número de descendentes. Calcule o salário que serão as 
+horas trabalhadas x o valor por hora. Calcule o salário líquido (= Salário 
+Bruto – desconto). A cada dependente será acrescido R$ 100 no Salário 
+Líquido. Exiba o salário a receber
