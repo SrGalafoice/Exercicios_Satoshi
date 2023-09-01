@@ -1,0 +1,42 @@
+// NAO LEMBRO SE ESTÁ TERMINADO ESSE AQUI, MAS VOU DEIXAR MSM ASSIM zzzzz
+import java.util.Scanner;
+
+public class oi40_teste {
+    public static void main(String[] args) {
+        Scanner leia = new Scanner(System.in);
+        System.out.println("Valor 1 ");
+        int x = leia.nextInt();
+        System.out.println("Valor 2 ");
+        int y = leia.nextInt();
+        int i;
+        int p = 0;
+        if (x > y){
+            for (i = y;i <= x; i++){
+                p = i;
+                if (p > 1) {
+                    double raiz = Math.sqrt(p);
+
+                    for (int i2 = 2; i2 <= raiz; i++){
+                        if (p % i2 != 0){
+                            System.out.println("Achei esse numero primo = " + p);
+                        }
+                    }
+                }
+            }
+        } else {
+            for (i = x;i <= y; i++){
+                p = i;
+                if (p > 1) {
+                    double raiz = Math.sqrt(p);
+
+                    for (int i2 = 2; i2 <= raiz; i++){
+                        if (p % i2 != 0) System.out.println("Achei esse numero primo = " + p);
+                    }
+                }
+            }
+
+        }
+    }
+}
+//Receba 2 números inteiros. Verifique e mostre todos os números primos 
+existentes entre eles.
