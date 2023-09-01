@@ -1,0 +1,14 @@
+public class oi39 {
+    public static void main(String[] args) {
+        float x = 1, y = 1, i;
+        for (i = 1; i <= 64; i++) {
+            System.out.println("A qte de grãos na casa " + i + " é de = " + x);
+            x = y + y;
+            y = x;
+        }
+    }
+}
+
+//Calcule a quantidade de grãos contidos em um tabuleiro de xadrez onde:
+Casa: 1 2 3 4 ... 64
+Qte: 1 2 4 8 ... N
