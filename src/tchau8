@@ -1,0 +1,28 @@
+public class tchau8 {
+    public static void main (String[] args){
+        Scanner leia = new Scanner(System.in);
+        int i, h, somames = 0;
+        int mat[][] = new int [4][3];
+        for (i = 0; i < 4; i++){
+            int somasemana = 0;
+            for (h = 0; h < 3; h++){
+                System.out.println("Matriz " + (i+1) + ", " + (h+1));
+                mat[i][h] = leia.nextInt();
+                somasemana += mat[i][h];
+            }
+            System.out.println("Vendas da semana " + (i+1) + " é de " + somasemana);
+        }
+        for (h = 0; h < 3; h++){
+            for (i = 0; i < 4; i ++){
+                somames += mat[i][h];
+            }
+            System.out.println("vendas do mes" + (h + 1) + " é" + somames);
+        }
+    }
+}
+
+// Criar e carregar uma matriz [4][3] inteiro com quantidade de produtos 
+vendidos em 4 semanas. Calcular e exibir:
+a. A quantidade de cada produto vendido no mês;
+b. A quantidade de produtos vendidos por semana;
+c. O total de produtos vendidos no mês. 
