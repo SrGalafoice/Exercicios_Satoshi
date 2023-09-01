@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class oi27 {
+    public static void main (String[] args) {
+        Scanner l = new Scanner(System.in);
+        System.out.println("Distancia em metros ");
+        float d = l.nextFloat();
+
+        System.out.println("Tempo em minutos ");
+        int t = l.nextInt();
+
+        t = t * 60;
+        double vm = d / t;
+        vm = vm * 3.6;
+        System.out.println("Velocidade media vai ser " + vm + "km/h");
+    }
+}
+
+// Receba o número de voltas, a extensão do circuito (em metros) e o tempo de 
+duração (minutos). Calcule e mostre a velocidade média em km/h.
